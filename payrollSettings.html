@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FinE Payroll</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 850px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;} 
+    }
+div.sidepanel {
+    background-color: lightblue;
+    
+    overflow: scroll;
+  }
+
+  /*NavBar settings
+  body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0; margin-top:30" id="mySidebar">
+<br><br>
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">My Profile</a>
+  <a href="#" class="w3-bar-item w3-button">Feedback 2</a>
+  <a href="#" class="w3-bar-item w3-button">Logout</a>
+</div>
+
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+//Left Menu
+function openLeftMenu() {
+    document.getElementById("leftMenu").style.display = "block";
+}
+function closeLeftMenu() {
+    document.getElementById("leftMenu").style.display = "none";
+}
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+</script>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="height: 20px">
+      <div class="navbar-header">                  
+      </div>
+</nav><br><br>
+    <!--yyy-->
+       <button class="w3-button w3-teal w3-xlarge w3-left" style="width: 50px; height: 50px" onclick="openLeftMenu()">&#9776;</button>
+       <a onclick="w3_open()"><img src="userlogin.PNG" align="right" style="width: 5%; height: 10%"></a><br>
+              
+
+<div class="container-fluid">
+  <div class="row content">   
+    <div class="col-sm-3 sidenav hidden-xs w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none; width:360px; margin-top:20; float: left" id="leftMenu"> <!--Hide this menu-->
+     <button class="w3-bar-item w3-button w3-large" onclick="closeLeftMenu()">Close &times;</button>
+
+      <h3><img src="logo.jpg" style="width: 10%; height: 10%"> Lanstar Technologies</h3>
+      <h2>Main Menu</h2>
+      <div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+
+      <div data-role="collapsible">
+        <h4>Setup/Parameters</h4>
+        <ul class="nav nav-pills nav-stacked">
+        <li ><a href="#section1">Company Settings</a></li>
+        <li><a href="#section3">H.R Settings</a></li>
+        <li><a href="#section2">Payroll Settings</a></li>
+        <li><a href="#section3">Security Parameters</a></li>        
+      </ul><br>
+      </div>
+
+      <div data-role="collapsible">
+        <h4>HR Management</h4>
+        <ul class="nav nav-pills nav-stacked">
+        <li ><a href="#section1">Staff Register</a></li>
+        <li><a href="#section2">Duty Management</a></li>
+        <li><a href="#section3">Leave & Off Management</a></li>
+        <li><a href="#section3">Overtime Requests</a></li>
+      </ul><br>
+      </div>
+
+      <div data-role="collapsible">
+        <h4>Payroll Management</h4>
+        <ul class="nav nav-pills nav-stacked">
+        <li ><a href="#section1">Payroll Setup</a></li>
+        <li><a href="#section2">Process Staff Salary</a></li>
+        <li><a href="#section3">Casual Staff Wages</a></li>
+        <li><a href="#section3">Benefits & Overtime Processing</a></li>
+      </ul><br>
+      </div>
+    </div>
+    
+
+
+     </div> 
+    <br>
+
+    <!--here is where the forms Go-->
+
+      
+
+  
+  </div>
+
+</div>
+
+
+
+</body>
+</html>

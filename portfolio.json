@@ -1,5 +1,6 @@
 {
-    "works": [{
+    "works": [
+        {
         "title": "MedPark Physiotherapy",
         "img": "https://drive.google.com/uc?export=view&id=1OjH48PvFMMfwDkpoYoooCHHUx155FhI7",
         "text": "A Physiotherapy practice information system built on top of ERPNext and leverages its Website, Healthcare and Rest API capabilities.",
@@ -12,5 +13,20 @@
             "Bootstrap"
         ],
         "link": "http://medpark.zahasystems.online/"
-    }]
+    }, {
+        "title": "Ploti.Cloud",
+        "img": "https://drive.google.com/uc?export=view&id=1AnCc4jOH3kfd2SOi__cHHAIlZqmR75yP",
+        "text": "A property listing app made for tenants seeking a fresh start, a new place to live..",
+        "tech_stack": [
+            "ERPNext",
+            "React",
+            "Python",
+            "Jinja API",
+            "REST API of Frappe",
+            "React-Bootstrap"
+        ],
+        "link": "https://ploticloud.netlify.app/"
+    }
+        
+    ]
 }

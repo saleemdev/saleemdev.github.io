@@ -1,0 +1,15 @@
+{
+    "works": [{
+        "title": "MedPark Physiotherapy",
+        "img": "../images/medpark.png",
+        "text": "A Physiotherapy practice information system built on top of ERPNext and leverages its Website, Healthcare and Rest API capabilities.",
+        "tech_stack": [
+            "ERPNext",
+            "Frappe",
+            "Python",
+            "Jinja API",
+            "REST API"
+        ],
+        "link": "https://drive.google.com/file/d/1OjH48PvFMMfwDkpoYoooCHHUx155FhI7/view?usp=sharing"
+    }]
+}
